@@ -1,0 +1,83 @@
+:root{
+    --size: 1rem;
+    --margin-between-images: 16px;
+}
+
+body{
+    margin-top: 16px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    padding: var(--size);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+}
+
+.navbar :hover{
+    background-color: lightblue;
+    transition: 0.5s;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #212429;
+    padding: var(--size);
+}
+
+.container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px, 1fr));
+    justify-content: space-between;    
+    gap: var(--margin-between-images);
+    padding: var(--size);
+}
+
+.container div{
+    padding: var(--size);
+}
+
+.container div img{
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+}
+
+.footer {
+    background-color: #212429;
+    padding: 16px;
+    text-align: center;
+}
+
+.footer img {
+    width: 32px;
+    height: 32px;
+    border-radius: 80%;
+    margin-right: 16px;
+    background-color: #ffffff;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer a:hover{
+    background-color: lightblue;
+    color: #212429;
+    transition: 0.5s;
+}
+
